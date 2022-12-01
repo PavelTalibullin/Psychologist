@@ -1,0 +1,10 @@
+body {
+	font-family: 'Noto Sans', sans-serif;
+	font-size: 24px;
+	color: #000000;
+	background-color: #FCFAF4;
+}
+
+.container {
+	width: 1286px;
+}
