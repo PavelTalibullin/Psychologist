@@ -11,77 +11,343 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300&display=swap" rel="stylesheet">
-	<link rel="icon" href="/images/icon/vector.ico">
+	<link rel="icon" href="/images/icon/vector.png">
 </head>
 
 <body>
-	<header>
-		<div class="container">
-			<div class="header">
-				<div class="header__logo">
-					<a href="/">
-						<img src="/images/img/Logo.png" alt="Ильмира Булатова: Эмпатичный психолог">
-					</a>
-				</div>
-				<nav class="header__nav">
-					<ul class="header__nav_menu">
-						<li>
-							<a href="#">Обо мне</a>
-						</li>
-						<li>
-							<a href="#">С чем я работаю</a>
-						</li>
-						<li>
-							<a href="#">Цены</a>
-						</li>
-						<li>
-							<a href="#">Отзывы</a>
-						</li>
-					</ul>
-				</nav>
-				<div class="header__contact">
-					<a href="#">
-						<img src="/images/icon/instagram.svg" alt="instagram">
-					</a>
-					<a href="#">
-						<img src="/images/icon/telegram.svg" alt="telegram">
-					</a>
-					<a href="#">
-						<img src="/images/icon/whatsapp.svg" alt="whatsapp">
-					</a>
+	<div class="wrapper">
+		<header class="header">
+			<div class="container">
+				<div class="d-flex justify-between align-center header_container">
+					<div class="header__logo">
+						<a href="/">
+							<img src="/images/img/Logo.png" alt="Ильмира Булатова: Эмпатичный психолог">
+						</a>
+					</div>
+					<nav class="header__nav">
+						<ul class="d-flex header__nav_list">
+							<li><a href="#">Обо мне</a></li>
+							<li><a href="#">С чем я работаю</a></li>
+							<li><a href="#">Цены</a></li>
+							<li><a href="#">Отзывы</a></li>
+						</ul>
+					</nav>
+					<div class="d-flex header__contact">
+						<a href="#">
+							<img src="/images/icon/insta.svg" alt="instagram" class="header__contact_img">
+						</a>
+						<a href="#">
+							<img src="/images/icon/teleg.svg" alt="telegram" class="header__contact_img">
+						</a>
+						<a href="#">
+							<img src="/images/icon/whats.svg" alt="whatsapp"
+								class="header__contact_img header__contact_img_ml">
+						</a>
+					</div>
 				</div>
 			</div>
+		</header>
+
+		<main>
+			<section class="banner">
+				<div class="container">
+					<div class="d-flex align-center justify-between">
+						<div class="banner_text">
+							<h3>Эмпатичный психолог</h3>
+							<h1>Ильмира Булатова</h1>
+							<p>Мягкая проработка глубинных проблем</p>
+
+							<div class="btn">
+								<a href="#" class="banner_btn">Записаться</a>
+							</div>
+
+						</div>
+						<div class="banner_img">
+							<img src="/images/img/photo_ilmira1.jpg" alt="Фото: Ильмира Булатова" class="banner_img__photo">
+						</div>
+					</div>
+			</section>
+
+			<div class="line_vector">
+				<img src="./images/img/line1.svg" alt="">
+			</div>
+
+			<section class="about_me">
+				<div class="container">
+					<div class="about_me__title">
+						<h2>
+							<span class="about">Обо</span>
+							<span class="me">мне</span>
+						</h2>
+					</div>
+					<div class="d-flex align-center justify-between about_me__info">
+						<div class="about_me__img">
+							<img src="/images/img/photo_ilmira2.jpg" alt="Ильмира Булатова: Эмпатичный психолог">
+						</div>
+						<div class="about_me__text">
+							<p>Я – профессиональный психолог с 5-летним опытом работы. Веду частную практику и живу в
+								Нью-Йорке.
+								Работаю <br>в глубинном подходе с аккуратными, подстраивающимися под клиента методами. </p>
+							<p>На сессиях создаю доверительную, безопасную атмосферу, <br>в которой клиент в любом своем
+								состоянии
+								чувствует
+								себя принятым и понятым. Для меня важно проводить консультации так, что обратившиеся ко мне
+								уходят
+								<br>
+								с
+								каждой
+								из них с максимальной пользой и важными осознаниями. Мой приоритет — ваш результат в работе <br>
+								со
+								мной.
+							</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<div class="line_vector2">
+				<img src="./images/img/line2.svg" alt="">
+			</div>
+
+			<section class="help_you">
+				<div class="container">
+					<div class="help_you__title_wrap">
+						<div class="help_you__title">
+							<h2>
+								<span class="i_help">Я помогу</span>
+								<span class="you">вам</span>
+							</h2>
+						</div>
+						<div class="help_you__hint">
+							<p>наведи мышку</p>
+							<img src="./images/img/arrowbottom.png" alt="" class="help_you__hint_arrow">
+						</div>
+					</div>
+					<div class="help_you__inform">
+							<div class="help_you__inform_item">
+								<p>Обрести уверенность в себе</p>
+							</div>
+							<div class="help_you__inform_item">
+								<p>Раскрыть потенциал и самореализоваться</p>
+							</div>
+							<div class="help_you__inform_item">
+								<p>Справиться с эмоциональным напряжением и агрессией</p>
+							</div>
+							<div class="help_you__inform_item">
+								<p>Преодолеть хроническую усталость, апатию и выгорание </p>
+							</div>
+							<div class="help_you__inform_item">
+								<p>Улучшить отношения с партнером/близкими</p>
+							</div>
+							<div class="help_you__inform_item">
+								<p>Победить тревоги, страхи, чувство вины и обиды</p>
+							</div>
+					</div>
+				</div>
+			</section>
+			<section class="more_about_me">
+				<div class="container">
+					<div class="more_about_me__wrap d-flex justify-between">
+						<div class="more_about_me__inform">
+							<div class="more_about_me__inform_title">
+								<h2>
+									<span class="more_title__part_one">Больше</span>
+									<span class="more_title__part_two">обо мне</span>
+								</h2>
+							</div>
+							<div class="more_about_me__inform_answers">
+								<div>
+									<p>С чем я работаю</p>
+								</div>
+								<div>
+									<p>Как я работаю</p>
+								</div>
+								<div>
+									<p>Образование</p>
+								</div>
+							</div>
+						</div>
+						<div class="more_about_me__img">
+							<img src="./images/img/moreaboutme.jpg" alt="">
+						</div>
+					</div>
+				</div>
+			</section>
+			<div class="line_vector3">
+				<img src="./images/img/Line3.svg" alt="">
+			</div>
+			<section class="price">
+				<div class="container">
+					<div class="price__wrap">
+						<h2 class="price_title">Цена</h2>
+						<div class="price_text">
+							<p>Длительность первой консультации: 1,5 часа</p>
+							<p>Длительность последующих консультаций: 1 час</p>
+						</div>
+						<div class="price_table d-flex">
+							<div class="price_table__item">
+								<p>Онлайн консультация</p>
+								<p>50$ / 3000 руб</p>
+							</div>
+							<div class="price_table__item">
+								<p>Пакет из 4 консультаций</p>
+								<p>180$ / 11000 руб</p>
+							</div>
+							<div class="price_table__item">
+								<p>Пакет из 10 консультаций</p>
+								<p>450$ / 27000 руб</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<div class="line_vector4">
+				<img src="./images/img/line_vector4.svg" alt="">
+			</div>
+			<section class="reviews">
+				<div class="container">
+					<h2 class="reviews__title">Отзывы</h2>
+					<div class="reviews__slider d-flex">
+						<div class="reviews__slider_item ">
+							<div class="reviews__slider_item__img">
+								<img src="./images/img/polina_bulg.jpg" alt="Отзыв Полины">
+							</div>
+							<div class="reviews__slider_item__text">
+								<h4>Полина</h4>
+								<p class="reviews__slider_item__text_inst">@apollinaria_bulgakova</p>
+								<p>Наши консультация очень позитивно повлияли на мою жизнь, на моё самочувствие и мою зону
+									комфорта. Я наконец-то поняла, что такое личные границы и как их выстраивать. Насколько это
+									всё-таки важно! После наших консультаций жить стало легче и более радостней!</p>
+							</div>
+						</div>
+						<div class="reviews__slider_item">
+							<div class="reviews__slider_item__img">
+								<img src="./images/img/talibullin_pa.jpg" alt="Отзыв Павла">
+							</div>
+							<div class="reviews__slider_item__text">
+								<h4>Павел</h4>
+								<p class="reviews__slider_item__text_inst">@talibullin_pavel</p>
+								<p>Когда я пришел, то вообще не понимал, что со мной происходит. Внутри была буря, куда
+									намешалось
+									всё. И я бесконечно благодарен, что ты так профессионально помогла мне с этим справиться!</p>
+							</div>
+						</div>
+						<div class="reviews__slider_item">
+							<div class="reviews__slider_item__img">
+								<img src="./images/img/anactasia.jpg" alt="Отзыв Анастасии">
+							</div>
+							<div class="reviews__slider_item__text">
+								<h4>Анастасия</h4>
+								<p class="reviews__slider_item__text_inst">@itsphotobitch</p>
+								<p>Огромная благодарность за консультацию!
+									Даже за 1,5 часа все встало в голове на свои места. И я сразу получила заряд мотивации к
+									действиям. У меня теперь нет страха поднимать прайс, просто потому что я поняла, что не несу
+									ответственность за реакции других людей.
+									Да, кто-то работает за копейки, а я не хочу!
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="consultation">
+				<div class="container">
+					<div class="consultation__wrap">
+						<h2 class="consultation__title">Записаться на консультацию</h2>
+						<div class="d-flex">
+							<div class="consultation__img">
+								<img src="./images/img/photo_ilmira3.jpg" alt="Ильмира Булатова: Эмпатичный психолог">
+							</div>
+							<div class="consultation__form_wrap">
+								<div class="consultation__form_title">
+									<p>Я напишу вам в течении дня!</p>
+								</div>
+								<div>
+									<form action="">
+										<div class="consultation__form_item d-flex">
+											<label for="name"></label>
+											<input type="text" id="name" placeholder="Имя" required>
+											<label for="tel"></label>
+											<input type="tel" id="tel" placeholder="Телефон" required>
+											<label for="email"></label>
+											<input type="email" id="email" placeholder="Почта" required>
+										</div>
+										<div class="consultation__form_checkbox">
+											<div class="consultation__form_checkbox_text">
+												<p>Где вам будет удобнее связаться?</p>
+											</div>
+											<div class="consultation__form_checkbox_social">
+												<div class="consultation__form_checkbox_item">
+													<input type="checkbox" id="Telegram">
+													<label for="Telegram">Telegram</label>
+												</div>
+												<div class="consultation__form_checkbox_item">
+													<input type="checkbox" id="WhatsApp">
+													<label for="WhatsApp">WhatsApp</label>
+												</div>
+												<div class="consultation__form_checkbox_item">
+													<input type="checkbox" id="Email">
+													<label for="Email">Email</label>
+												</div>
+											</div>
+										</div>
+										<div class="consultation__button">
+											<button type="submit" class="consultation__form_button">Отправить</button>
+										</div>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<div class="line_vector5">
+			<img src="./images/img/line_vector5.svg" alt="">
 		</div>
-	</header>
 
-	<main>
-		<section>
-			<div>
-				<h3>Эмпатичный психолог</h3>
-				<h1>Ильмира Булатова</h1>
-				<p>Мягкая проработка глубинных проблем</p>
-				<a href="#">Записаться</a>
+		
+		<footer class="footer">
+			<div class="container">
+				<div class="footer__wrap">
+					<div class="d-flex justify-between footer__menu">
+						<div class="footer__menu_logo"><a href="/">ИЛЬМИРА БУЛАТОВА</a></div>
+						<nav class="footer__menu_nav">
+							<ul class="d-flex">
+								<li><a href="#">Обо мне</a></li>
+								<li><a href="#">С чем я работаю</a></li>
+								<li><a href="#">Цены</a></li>
+								<li><a href="#">Отзывы</a></li>
+							</ul>
+						</nav>
+					</div>
+					<div class="d-flex justify-between footer__contact">
+						<div class="footer__contact_social">
+							<a href="#">
+								<img src="/images/icon/insta.svg" alt="instagram"
+									class="footer__contact_img footer__contact_img_ml">
+							</a>
+							<a href="#">
+								<img src="/images/icon/teleg.svg" alt="telegram" class="footer__contact_img">
+							</a>
+							<a href="#">
+								<img src="/images/icon/whats.svg" alt="whatsapp" class="footer__contact_img">
+							</a>
+						</div>
+						<div class="footer__contact_email">
+							<a href="maito:ilmirabulatova07@gmail.com">ilmirabulatova07@gmail.com</a>
+						</div>
+					</div>
+				</div>
 			</div>
-			<img src="/images/img/photo_ilmira1.jpg" alt="Фото: Ильмира Булатова">
-
-			<img src="/images/img/threewaves.svg" alt="">
-		</section>
-
-		<section>
-			<img src="/images/img/photo_ilmira2.jpg" alt="">
-			<h2>Обо мне</h2>
-			<p>Я – профессиональный психолог с 5-летним опытом работы. Веду частную практику и живу в Нью-Йорке. Работаю в
-				глубинном подходе с аккуратными, подстраивающимися под клиента методами. </p>
-			<p>На сессиях создаю доверительную, безопасную атмосферу, в которой клиент в любом своем состоянии чувствует
-				себя принятым и понятым. Для меня важно проводить консультации так, что обратившиеся ко мне уходят с каждой
-				из них с максимальной пользой и важными осознаниями. Мой приоритет — ваш результат в работе со мной.</p>
-		</section>
-
-		<section>
-			<h2>Я помогу вам</h2>
-
-		</section>
-	</main>
+		</footer>
+	</div>
+	<!-- Подключили Jquery -->
+	<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+	<!-- Подключили Slick slider -->
+	<script src="./js/slick.min.js"></script>
+	<!-- Файл скриптов -->
+	<script src="./js/scriptSlider.js"></script>
 </body>
 
 </html>
