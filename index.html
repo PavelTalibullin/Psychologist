@@ -24,12 +24,17 @@
 							<img src="/images/img/Logo.png" alt="Ильмира Булатова: Эмпатичный психолог">
 						</a>
 					</div>
-					<nav class="header__nav">
+					<button class="header__burger-btn" id="burger">
+						<span></span>
+						<span></span>
+						<span></span>
+					</button>
+					<nav class="header__nav" id="header__nav">
 						<ul class="d-flex header__nav_list">
-							<li><a href="#">Обо мне</a></li>
-							<li><a href="#">С чем я работаю</a></li>
-							<li><a href="#">Цены</a></li>
-							<li><a href="#">Отзывы</a></li>
+							<li><a data-goto=".page__section_1" href="#" class="menu__link">Обо мне</a></li>
+							<li><a data-goto=".page__section_2" href="#" class="menu__link">С чем я работаю</a></li>
+							<li><a data-goto=".page__section_3" href="#" class="menu__link">Цены</a></li>
+							<li><a data-goto=".page__section_4" href="#" class="menu__link">Отзывы</a></li>
 						</ul>
 					</nav>
 					<div class="d-flex header__contact">
@@ -51,7 +56,7 @@
 		<main>
 			<section class="banner">
 				<div class="container">
-					<div class="d-flex align-center justify-between">
+					<div class="d-flex align-center justify-between banner_small">
 						<div class="banner_text">
 							<h3>Эмпатичный психолог</h3>
 							<h1>Ильмира Булатова</h1>
@@ -65,6 +70,14 @@
 						<div class="banner_img">
 							<img src="/images/img/photo_ilmira1.jpg" alt="Фото: Ильмира Булатова" class="banner_img__photo">
 						</div>
+
+						<div class="banner_text__small">
+							<p>Мягкая проработка глубинных проблем</p>
+
+							<div class="btn_small">
+								<a href="#" class="banner_btn__small">Записаться</a>
+							</div>
+						</div>
 					</div>
 			</section>
 
@@ -72,7 +85,7 @@
 				<img src="./images/img/line1.svg" alt="">
 			</div>
 
-			<section class="about_me">
+			<section class="about_me page__section_1">
 				<div class="container">
 					<div class="about_me__title">
 						<h2>
@@ -122,6 +135,9 @@
 							<p>наведи мышку</p>
 							<img src="./images/img/arrowbottom.png" alt="" class="help_you__hint_arrow">
 						</div>
+						<div class="help_you__hint_small">
+							<p>Нажми на квадратик, узнай подробнее</p>
+						</div>
 					</div>
 					<div class="help_you__inform">
 							<div class="help_you__inform_item">
@@ -145,7 +161,7 @@
 					</div>
 				</div>
 			</section>
-			<section class="more_about_me">
+			<section class="more_about_me page__section_2">
 				<div class="container">
 					<div class="more_about_me__wrap d-flex justify-between">
 						<div class="more_about_me__inform">
@@ -176,7 +192,7 @@
 			<div class="line_vector3">
 				<img src="./images/img/Line3.svg" alt="">
 			</div>
-			<section class="price">
+			<section class="price page__section_3">
 				<div class="container">
 					<div class="price__wrap">
 						<h2 class="price_title">Цена</h2>
@@ -204,9 +220,10 @@
 			<div class="line_vector4">
 				<img src="./images/img/line_vector4.svg" alt="">
 			</div>
-			<section class="reviews">
+			<section class="reviews page__section_4">
 				<div class="container">
 					<h2 class="reviews__title">Отзывы</h2>
+					<p class="reviews__title_text">Листай влево, тут много интересного!</p>
 					<div class="reviews__slider d-flex">
 						<div class="reviews__slider_item ">
 							<div class="reviews__slider_item__img">
@@ -219,6 +236,11 @@
 									комфорта. Я наконец-то поняла, что такое личные границы и как их выстраивать. Насколько это
 									всё-таки важно! После наших консультаций жить стало легче и более радостней!</p>
 							</div>
+							<div class="reviews__slider_item__text_small">
+								<p>Наши консультация очень позитивно повлияли на мою жизнь, на моё самочувствие и мою зону
+									комфорта. Я наконец-то поняла, что такое личные границы и как их выстраивать. Насколько это
+									всё-таки важно! После наших консультаций жить стало легче и более радостней!</p>
+							</div>
 						</div>
 						<div class="reviews__slider_item">
 							<div class="reviews__slider_item__img">
@@ -227,6 +249,11 @@
 							<div class="reviews__slider_item__text">
 								<h4>Павел</h4>
 								<p class="reviews__slider_item__text_inst">@talibullin_pavel</p>
+								<p>Когда я пришел, то вообще не понимал, что со мной происходит. Внутри была буря, куда
+									намешалось
+									всё. И я бесконечно благодарен, что ты так профессионально помогла мне с этим справиться!</p>
+							</div>
+							<div class="reviews__slider_item__text_small">
 								<p>Когда я пришел, то вообще не понимал, что со мной происходит. Внутри была буря, куда
 									намешалось
 									всё. И я бесконечно благодарен, что ты так профессионально помогла мне с этим справиться!</p>
@@ -245,7 +272,13 @@
 									ответственность за реакции других людей.
 									Да, кто-то работает за копейки, а я не хочу!
 								</p>
-							</div>
+						</div>
+						<div class="reviews__slider_item__text_small">
+							<p>Огромная благодарность за консультацию!
+								Даже за 1,5 часа все встало в голове на свои места. И я сразу получила заряд мотивации к
+								действиям. У меня теперь нет страха поднимать прайс, просто потому что я поняла, что не несу
+								ответственность за реакции других людей.
+								Да, кто-то работает за копейки, а я не хочу!</p>
 						</div>
 					</div>
 				</div>
@@ -342,12 +375,15 @@
 			</div>
 		</footer>
 	</div>
+	<script defer src="./js/scriptBurger.js"></script>
 	<!-- Подключили Jquery -->
 	<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 	<!-- Подключили Slick slider -->
 	<script src="./js/slick.min.js"></script>
 	<!-- Файл скриптов -->
 	<script src="./js/scriptSlider.js"></script>
+
+
 </body>
 
 </html>
