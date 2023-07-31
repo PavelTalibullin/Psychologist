@@ -971,6 +971,13 @@ main {
   }
 
   /* БУРГЕР */
+  .container {
+	max-width: 1288px;
+	margin: 0 auto;
+	padding: 0 15px;
+	box-sizing: content-box;
+}
+
   .header__nav {
     position: fixed;
     top: -300px;
@@ -979,6 +986,8 @@ main {
     visibility: hidden;
 	 overflow: hidden;
 	 transition: transform 0.5s, visibility .9s ;
+	 border-top: 1px solid #0e0e0e;
+	 border-bottom: 1px solid #0e0e0e;
   }
 
   .header__nav_list {
@@ -999,19 +1008,22 @@ main {
     display: block;
   }
 
+
   .header.open .header__nav {
 	transform: translateY(300px);
 	visibility: visible;
 	margin-top: 32px;
-	border-top: 1px solid #0e0e0e;
-	border-bottom: 1px solid #0e0e0e;
+
  }
 
-  .header__burger-btn {
-    display: block;
-    order: 3;
-    margin: 16px;
-  }
+
+ .header__burger-btn {
+	display: block;
+	order: 3;
+	margin: 16px;
+	padding: 24px;
+	cursor: pointer;
+}
 
   .header__burger-btn span {
     position: absolute;
